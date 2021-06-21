@@ -188,3 +188,12 @@
 }
 
 /*fim members*/
+
+/*inicio lançamentos*/
+
+.songs{
+	max-width: 50%;
+	border-radius: 2% !important;
+	padding-left: 5%;
+}
+/*fim lançamentos*/
