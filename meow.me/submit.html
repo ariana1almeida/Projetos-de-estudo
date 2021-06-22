@@ -66,6 +66,46 @@
 			<p>Have any cat pictures you want to share? This is your moment to show them to the world!</p>
 		</div>
 
+		<section>
+			<div class="container">
+
+				<form action="https://formspree.io/f/xnqlvkye" method="POST">
+					<!--this is where the person will put their name for credits-->
+		  			<div class="form-group">
+		  				<label for="firstName"> Your name (optional):</label><br>
+		  				<input type="text" id="firstName" name="firstName">
+		  			</div>
+
+					<!--This is where the person will put their email-->
+		  			<div class="form-group">
+		  				<label for="email">Email:</label> <br>
+		  				<input type="email" id="email" name="email">
+		  			</div>
+
+					<!--This is where the person can write the categories they think fit the picture they've sent-->
+		  			<div class="form-group">
+		  				<label for="category">Which category you think this picture fits into(you can choose both the ones already existing and new ones that we don't have yet):</label><br>
+		  				<input type=category id="category" name="category">
+		  			</div>
+
+		  			<!-- This is where the person can select the picture from their pc/cellphone -->
+		  			<div class="form-group">
+		  				<form action="upload_image.php" method="post"
+		  					enctype="multipart/form-data">
+							<p>
+							    <input type="file" name="photo"/><br><br>
+							    <input class="input" type="submit" value="Submit" name="submit"/>
+							</p>
+						</form>
+
+		  			</div>
+			
+				</form>
+
+			</div>
+
+		</section>
+
 	</div>
 
 	<div id="footer">
